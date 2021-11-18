@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Red+Hat+Display:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Vicious Cycles</title>
+</head>
+<body class="homeImage">
+    
+    <header>
+        <nav>
+            <ul class="headerLinks">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html"><img src="./images/vclogo.png" onmouseover="this.src='./images/vclogohover.png';" onmouseout="this.src='./images/vclogo.png';" height="70px" alt="" ></a></li>
+                <li><a href="social.html">Social</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="containerContact">
+            <div class="glass">
+                <div class="container">
+                    <form action="action_page.php">
+                    
+                        <!--FORM  -->
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Jane">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Dough">
+
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="email" placeholder="yourname@email.com">
+                    <section class="checkbox"> 
+                      <label for="">How did you hear about us?</label>
+                      
+
+                      <!-- CHECKBOX -->
+                      <label for="vehicle1"> Social Media</label><br>
+                      <input type="checkbox" class="checkboxText" name="vehicle1" value="Bike">
+
+                      
+                      <label for="vehicle2"> Word of Mouth</label><br>
+                      <input type="checkbox" class="checkboxText" id="vehicle2" name="vehicle2" value="Car">
+                      
+                      <label for="vehicle3"> Other</label><br>
+                      <input type="checkbox" class="checkboxText" id="vehicle3" name="vehicle3" value="Boat">
+                    </section> 
+
+                    <!-- DROPDOWN -->
+                    <label for="cars">Your Status</label>
+
+                        <select name="cars" id="cars">
+                        <option value="volvo">New Customer</option>
+                        <option value="saab">Existing Customer</option>
+                        <option value="mercedes">Window Shopping</option>
+                        <option value="audi">Bikes Suck</option>
+                        </select>
+                    
+                    <!--TEXT FIELD  -->
+                      <label for="subject">Message</label>
+                      <textarea id="subject" name="subject" placeholder="Say hi.." style="height:55px"></textarea>
+
+
+                    <!--RADIO BUTTONS  -->
+                    <section class="formRadio">
+                      <input type="submit" value="Submit">
+                      <label for="robot" class="notRobot">I am not a Robot</label>
+                      <input type="radio" name="Robot" id="">
+                      <label for="robot" class="robot">I AM a Robot</label>
+                      <input type="radio" name="Robot" id="">
+                    </section>
+                  
+                    </form>
+                  </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="site-footer">
+        <div class="containerFooter">
+            <div class="row" >
+                <ul class="footerLinks">
+                        <li>
+                            <a href="https://www.facebook.com/onyxmotorbikes" class="fa fa-facebook fa-2x" target="_blank" id="footLink"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/onyxmotorbikes/?hl=en" class="fa fa-instagram fa-2x" target="_blank" id="footLink"></a>
+                        </li>
+                        <li class="footerText">
+                            &copy;Vicious Cycles<br>
+                            763 Vicious St.<br>
+                            Raleigh, NC
+                            27610<br>
+                            bikes@viciouscycles.com
+                            
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/onyxmotorbikes" class="fa fa-twitter fa-2x" target="_blank" id="footLink"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCQL8M1eh97sxgvuoMxAej3g/videos" class="fa fa-youtube fa-2x" target="_blank" id="footLink"></a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
